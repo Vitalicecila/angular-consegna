@@ -26,7 +26,7 @@ export class AppComponent {
   //istanzio un oggetto di tipo del servizio chuck
   constructor(private service: ChiaveService) {}
 
-  showOne(id) {
+  showOne(id: postit) {
     this.selezione.titolo = id.titolo;
     this.selezione.corpo = id.corpo;
   }
